@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./script.js">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .middle{
+            margin: auto;
+            text-align: center;
+            justify-content: center;
+            display:flex;
+        }
+
+        .center {
+
+            border: 2px solid orange;
+            width:fit-content;
+            justify-content: center;
+            text-align: center;
+            padding: 30px;
+            margin: auto;           
+        }
+
+        .s {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            background-color: transparent;
+            border: 2px solid tomato;
+        }
+
+        .bo {
+            border: 2px solid pink;
+        }
+
+        h3 {
+            color:violet;
+            height: fit-content;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            color: ;
+
+        }
+
+        .pad {
+            padding: 5px;
+        }
+       .rock{
+            color:aqua;
+            border: 2px solid deeppink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="middle">
+        <div class="center">
+            <div class="rock">
+            <h1>Rock Paper Scissor</h1></div>
+            <br>
+            <div class="bo">
+
+                <h3>Computer Choice:<span id="computer-coice"></span></h3>
+                <h3>Your Choice:<span id="user-choice"></span></h3>
+                <h3>Result:<span id="result"></span></h3>
+            </div>
+            <div style="color:blue"><h1>Select your choice:</h1></div>
+            <div class="s">
+                <div class="pad"><button onclick="displaY1()" id="stone"><img
+                            src="./images-removebg-preview-removebg-preview.jpeg" width="100px" height="100px"></button>
+                </div>
+                <div class="pad"><button onclick="displaY2()" id="scissor"><img src="./images__2_-removebg-preview.png"
+                            width="100px" height="100px"></button>
+                </div>
+                <div class="pad"><button onclick="displaY3()" id="paper"><img
+                            src="./images__1_-removebg-preview (1).png" width="100px" height="100px"></button></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
