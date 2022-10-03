@@ -1,8 +1,10 @@
 const computer=document.getElementById("computer-coice")
+const stone=document.getElementById("stone").innerHTML;
+const paper=document.getElementById("paper").innerHTML;
+const scissor=document.getElementById("scissor").innerHTML;
 const user=document.getElementById("user-choice")
 const resulT=document.getElementById("result")
-let userChoice
-let computerChoice
+let userChoice,computerChoice
 
 choice=["stone","scissor","paper"]
 
@@ -18,29 +20,37 @@ function displaY(){
 function displaY1(){
    userChoice=document.getElementById("stone").innerHTML;
    user.innerHTML=userChoice
-   user.style="color:violet"
+   userChoice='stone'
 
    practice()
 }
 function displaY2(){
    userChoice=document.getElementById("scissor").innerHTML;
    user.innerHTML=userChoice
-   user.style="color:violet"
-
+   userChoice='scissor'
    practice()
 }
 function displaY3(){
    userChoice=document.getElementById("paper").innerHTML;
    user.innerHTML=userChoice
-   user.style="color:violet"
+   userchoice="paper"
    practice()
 }
 
-
 function practice(){
    computerChoice=choice[Math.floor(Math.random()*choice.length)]
-   computer.innerHTML=computerChoice 
-   computer.style="color:violet"
+   if (computerChoice =='stone'){
+      computer.innerHTML=stone;
+      computerChoice='stone'
+   }
+   else if (computerChoice =='paper'){
+      computer.innerHTML=paper;
+      computerChoice='paper'
+   }
+   else if (computerChoice =='scissor'){
+      computer.innerHTML=scissor
+      computerChoice='scissor'
+   }
    Result()
     
 }
@@ -75,7 +85,6 @@ function Result(){
    }
 
 }
-
 function itscolor(){
    if (resulT.innerHTML=="computer Wins"){
       resulT.style="color:red";
@@ -89,6 +98,8 @@ function itscolor(){
       resulT.style="color:blue";
    }
 }
+
+
 
 
 

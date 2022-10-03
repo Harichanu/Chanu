@@ -5,74 +5,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./script.js">
     <title>Document</title>
     <style>
         body {
-            background: url(./images.jpeg) no-repeat;
-            width: 100%;
-            height: 100vh;
-            background-position: bottom;
-            background-size: cover;
-            color:greenyellow;
+            background-color: black;
+        }
+        .middle{
+            margin: auto;
+            text-align: center;
+            justify-content: center;
+            display:flex;
         }
 
-        .center13 {
-            width: 50%;
-            margin:auto;
-        }
-        .j{
+        .center {
+
+            border: 2px solid orange;
+            width:fit-content;
+            justify-content: center;
             text-align: center;
-            height: 100%;
+            padding: 30px;
+            margin: auto;           
         }
-        .s{
+
+        .s {
             display: flex;
+            justify-content: center;
         }
-        button{
-            background-color:transparent;
-             width:auto;
-             height:auto;
-            border:2px solid tomato;
+
+        button {
+            background-color: transparent;
+            border: 2px solid tomato;
         }
-        
+
+        .bo {
+            border: 2px solid pink;
+        }
+
+        h3 {
+            color:violet;
+            height: fit-content;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            color: ;
+
+        }
+
+        .pad {
+            padding: 5px;
+        }
+       .rock{
+            color:aqua;
+            border: 2px solid deeppink;
+        }
     </style>
 </head>
 
 <body>
-    <div class="center13">
-        <div>
-            <div id="game">
-                <div class="j">
-                    <div class="j"></div>
-                    <div class="j">
-                        <h1 style="color:aqua">Rock Paper Scissor</h1>
-                        <br />
-                        <h3>Computer choice: <span id="computer-coice"></span></h3>
-                        <h3>your choice: <span id="user-choice"></span></h3>
-                        <h3>result: <span id="result"></span></h3>
-                        <br>
-                        <div class="s">
-                            <div class="col"><button  onclick="displaY1()" id="stone"><img src="./images-removebg-preview-removebg-preview.jpeg" width="100px" height="100px"></button></div>
-                            <div class="col"><button  onclick="displaY2()" id="scissor"><img src="./images__2_-removebg-preview.png" width="100px" height="100px"></button>
-                            </div>
-                            <div class="col"><button  onclick="displaY3()" id="paper"><img src="./images__1_-removebg-preview (1).png" width="100px" height="100px"></button></div>
-                        </div>
-                    </div>
+    <div class="middle">
+        <div class="center">
+            <div class="rock">
+            <h1>Rock Paper Scissor</h1></div>
+            <br>
+            <div class="bo">
+
+                <h3>Computer Choice:<span id="computer-coice"></span></h3>
+                <h3>Your Choice:<span id="user-choice"></span></h3>
+                <h3>Result:<span id="result"></span></h3>
+            </div>
+            <div style="color:blue"><h1>Select your choice:</h1></div>
+            <div class="s">
+                <div class="pad"><button onclick="displaY1()" id="stone"><img
+                            src="./images-removebg-preview-removebg-preview.jpeg" width="100px" height="100px"></button>
                 </div>
+                <div class="pad"><button onclick="displaY2()" id="scissor"><img src="./images__2_-removebg-preview.png"
+                            width="100px" height="100px"></button>
+                </div>
+                <div class="pad"><button onclick="displaY3()" id="paper"><img
+                            src="./images__1_-removebg-preview (1).png" width="100px" height="100px"></button></div>
             </div>
         </div>
     </div>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
     <script src="script.js"></script>
-
 </body>
 
 </html>
